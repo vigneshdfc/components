@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "grold-regular";
+}
+@font-face {
+  font-family: "grold-regular";
+  src: url(./assets/fonts/Grold-Regular.ttf);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  justify-content: space-between;
+  padding: 26px 32px;
+  background-color: rgb(146, 146, 146);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  align-items: center;
+  padding: 86px;
+  font-size: 24px;
+  color: black;
+}
+.nav a:hover {
+  color: white;
+}
+.login button:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+.login button {
+  padding: 16px 34px;
+  color: white;
+  background-color: rgb(34, 33, 33);
+  border-radius: 10px;
+  margin-right: 12px;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: azure;
+  padding: 16px;
+}
+.sidebar_menu {
+  display: flex;
+  justify-content: space-around;
+}
+.home a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hamburger {
+  display: none;
+}
+.renderproducts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 39px;
+}
+.renderproducts .product {
+  text-align: center;
+}
+.productbox {
+  background-color: aquamarine;
+  padding: 34px 64px;
+  width: 320px;
+  height: 200px;
+}
+
+.rendercloths {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 39px;
+}
+.renderproducts .product {
+  text-align: center;
+}
+.counter {
+  gap: 15px;
+}
+.counter button {
+  padding: 10px;
+}
+.clothbox {
+  background-color: hotpink;
+  justify-content: space-evenly;
+  padding: 34px 64px;
+  border-radius: 20px;
+  width: 320px;
+  height: 200px;
+}
+.renderfollowers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  margin: 39px;
+}
+.followerlist {
+  background-color: lightgray;
+  border: 1px solid black;
+  color: black;
+  padding: 34px 64px;
+  width: 320px;
+  height: 200px;
+  border-radius: 200px;
+}
+.cht button {
+  background-color: white;
+  color: black;
+  width: 75px;
+  height: auto;
+  border-radius: 20px;
+}
+.productsection {
+  background-color: orchid;
+  justify-content: space-evenly;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 64px;
+  border-radius: 20px;
+  width: 320px;
+  height: 200px;
+}
+.dress {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+.modelsection {
+  background-color: black;
+  color: azure;
+  justify-content: space-evenly;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 64px;
+  border-radius: 20px;
+  width: 320px;
+  height: 200px;
+}
+.follower {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 20px;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+.todo {
+  width: 380px;
+  height: 300px;
+  background-color: burlywood;
+  border: 1px solid black;
+  align-items: center;
+  padding: 34px 64px;
+  margin: 20px;
+}
+.mini {
+  background-color: blanchedalmond;
+  align-items: center;
+  padding-left: 500px;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav a {
+    display: none;
+  }
+  .login button {
+    display: none;
+  }
+}
